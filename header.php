@@ -39,11 +39,10 @@
 		<div class="header-top">
 			<div class="container">
 				<div class="row align-items-center">
-
-
 				</div>
 			</div>
 		</div>
+
 		<div class="container main-menu">
 			<div class="row align-items-center justify-content-between d-flex">
 				<div id="logo">
@@ -52,10 +51,10 @@
 				<nav id="nav-menu-container">
 					<ul class="nav-menu">
 						<li><a href="index.php">Beranda</a></li>
-						<li><a href="data_wisata.php">Data Sawah</a></li>
+						<li><a href="data_peta.php">Peta Persebaran</a><li>
+						<li><a href="data_wisata.php">Info Sawah</a></li>
 						<li><a href="data_sdg.php">SDG's</a></li>
 						<li><a href="admin/login.php">Login</a></li>
-
 					</ul>
 				</nav><!-- #nav-menu-container -->
 			</div>

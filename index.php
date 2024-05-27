@@ -15,7 +15,7 @@
         <p class="text-white">
           Selamat datang di sistem informasi geografis pemetaan persebaran sawah di Provinsi Banten. Website ini memuat informasi dan lokasi dari persebaran sawah di Provinsi Banten.
         </p>
-        <a href="#peta_wisata" class="primary-btn text-uppercase">Selengkapnya</a>
+        <a href="data_peta.php" class="primary-btn text-uppercase">Selengkapnya</a>
       </div>
     </div>
   </div>
@@ -31,7 +31,7 @@
       <div class="container">
 
         <div class="title text-center">
-          <h1 class="mb-5">Peta Lokasi Persebaran</h1>
+          <h1 class="mb-5">Peta Provinsi Banten</h1>
           <br>
         </div>
 
@@ -41,14 +41,19 @@
           </style>
           
           <script>
-            var map = L.map('map').setView([-6.4543385,106.1562541], 10);
+            var map = L.map('map').setView([-6.4543385,106.1562541], 9);
             L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom: 19, attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(map);
-            L.marker([-6.4543385,106.1562541]).addTo(map).on("click",function(e){
-              alert(e.latlng);
-            });
+            L.marker([-5.9919235,106.0342306]).addTo(map).bindPopup("Kota Cilegon");
+            L.marker([-6.6050494,106.1862641]).addTo(map).bindPopup("Kabupaten Lebak");
+            L.marker([-6.1147484,106.1535254]).addTo(map).bindPopup("Kota Serang");
+            L.marker([-6.1726694,106.6268317]).addTo(map).bindPopup("Kota Tangerang");
+            L.marker([-6.1900469,106.4427998]).addTo(map).bindPopup("Kabupaten Tangerang");
+            L.marker([-6.2831386,106.7002452]).addTo(map).bindPopup("Kota Tangerang Selatan");
+            L.marker([-6.3343136,106.1024518]).addTo(map).bindPopup("Kabupaten Pandeglang");
+            L.marker([-6.2283891,106.0749499]).addTo(map).bindPopup("Kabupaten Serang");
           </script>
-
         </div>
+
       </div>
     </section>
   </section>

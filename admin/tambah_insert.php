@@ -10,7 +10,7 @@ $latitude = $_POST['latitude'];
 $longitude = $_POST['longitude'];
 
 // menginput data ke database
-mysqli_query($koneksi, "insert into wisata values('','$nama','$alamat','$deskripsi','$harga_tiket','$latitude','$longitude')");
+mysqli_query($koneksi, "insert into wisata values('','$nama','$alamat','$deskripsi','$latitude','$longitude')");
 
 // Jalankan query
 if (mysqli_query($koneksi, $query)) {

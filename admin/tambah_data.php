@@ -29,9 +29,9 @@
                             <!-- Main content -->
                             <form class="form-horizontal style-form" style="margin-top: 10px;" action="tambah_aksi.php" method="post" enctype="multipart/form-data" name="form1" id="form1">
                                 <div class="form-group">
-                                    <label class="col-sm-2 col-sm-2 control-label">Nama Daerah</label>
+                                    <label class="col-sm-2 col-sm-2 control-label">Nama Sawah</label>
                                     <div class="col-sm-6">
-                                        <input name="nama_wisata" type="text" class="form-control" placeholder="Nama Daerah" required />
+                                        <input name="nama_wisata" type="text" class="form-control" placeholder="Nama Sawah" required />
                                     </div>
                                 </div>
                                 <div class="form-group">

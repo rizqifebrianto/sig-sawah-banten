@@ -44,7 +44,7 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="col-sm-2 col-sm-2 control-label">Nama Daerah</label>
+                                        <label class="col-sm-2 col-sm-2 control-label">Nama Sawah</label>
                                         <div class="col-sm-8">
                                             <input name="nama_wisata" type="text" id="nama_wisata" class="form-control" value="<?php echo $data['nama_wisata']; ?>" required />
                                         </div>

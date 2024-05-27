@@ -34,7 +34,7 @@ include_once "koneksi.php"; ?>
                   <td class="ctr">
                     <div class="btn-group">
                       <a target="_blank" href="detail.php?id=<?php echo $item->id_sekolah; ?>" rel="tooltip" data-original-title="Lihat File" data-placement="top" class="btn btn-primary">
-                        <i class="fa fa-map-marker"> </i> Detail dan Lokasi</a>&nbsp;
+                        <i class="fa fa-map-marker"> </i> Detail</a>&nbsp;
                     </div>
                   </td>
                 </tr>

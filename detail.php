@@ -41,7 +41,7 @@ $title = "Detail dan Lokasi : " . $nama_wisata;
 <!-- End banner Area -->
 <!-- Start about-info Area -->
 <section class="about-info-area section-gap">
-  <div class="container" style="padding-top: 120px;">
+  <div class="container" style="padding-top: 50px;">
     <div class="row">
 
       <div class="col-md-7" data-aos="fade-up" data-aos-delay="200">
@@ -52,12 +52,11 @@ $title = "Detail dan Lokasi : " . $nama_wisata;
           <div class="panel-body">
             <table class="table">
               <tr>
-                <!-- <th>Item</th> -->
-                <th>Detail</th>
+                <th></th>
               </tr>
               <tr>
                 <td>
-                  <h6>Nama Daerah</h6>
+                  <h6>Nama Sawah</h6>
                 </td>
                 <td>
                   <p><?php echo $nama_wisata ?></p>
@@ -80,17 +79,16 @@ $title = "Detail dan Lokasi : " . $nama_wisata;
                 </td>
               </tr>
             </table>
+            <a href="data_peta.php" class="primary-btn text-uppercase">Buka Peta</a>
           </div>
         </div>
       </div>
 
       <div class="col-md-5" data-aos="zoom-in">
         <div class="panel panel-info panel-dashboard">
-          <div class="panel-heading centered">
-            <h2 class="panel-title"><strong>Lokasi</strong></h4>
-          </div>
+          <div class="panel-heading centered"></div>
           <div class="panel-body">
-            <div id="map-canvas" style="width:100%;height:380px;"></div>
+            <img src="img/fotosawah2.png" alt="Gambar Sawah"/>
           </div>
         </div>
       </div>

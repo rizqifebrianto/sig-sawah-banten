@@ -4,8 +4,11 @@ $user = "root";
 $pass = "";
 $name = "sig_map4";
 
-$koneksi = mysqli_connect($host, $user, $pass, $name);
-if (mysqli_connect_errno()) {
-    echo "Koneksi database mysqli gagal!!! : " . mysqli_connect_error();
+// Membuat koneksi
+$koneksi = new mysqli($host, $user, $pass, $name);
+
+// Memeriksa koneksi
+if ($koneksi->connect_error) {
+    die("Koneksi gagal: " . $conn->connect_error);
 }
-//mysqli_select_db($name, $koneksi) or die("Tidak ada database yang dipilih!");
+?>
