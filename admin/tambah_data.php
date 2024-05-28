@@ -1,11 +1,3 @@
-<?php
-session_start();
-if ($_SESSION['status'] != "login") {
-    header("location:../tampil_data.php?pesan=belum_login");
-}
-include "../koneksi.php";
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <?php include "header.php"; ?>
@@ -20,13 +12,17 @@ include "../koneksi.php";
             <div id="content">
                 <?php include "menu_topbar.php"; ?>
 
-
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Tambah Data Tempat Persebaran Sawah</h1>
+                    </div>
 
+                    <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Data Persebaran Sawah Prov. Banten</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Tambah Data Persawahan</h6>
                         </div>
                         <div class="card-body">
 
@@ -35,7 +31,7 @@ include "../koneksi.php";
                                 <div class="form-group">
                                     <label class="col-sm-2 col-sm-2 control-label">Nama Sawah</label>
                                     <div class="col-sm-6">
-                                        <input name="nama_wisata" type="text" class="form-control" placeholder="Nama Sawah" required />
+                                        <input name="nama_daerah" type="text" class="form-control" placeholder="Nama Sawah" required />
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -74,12 +70,16 @@ include "../koneksi.php";
 
                         </div>
                     </div>
+
                 </div>
+                <!-- /.container-fluid -->
             </div>
+            <!-- End of Main Content -->
+            <?php include "footer.php"; ?>
         </div>
-
-        <?php include "footer.php"; ?>
-
+        <!-- End of Content Wrapper -->
     </div>
+    <!-- End of Page Wrapper -->
 </body>
+
 </html>

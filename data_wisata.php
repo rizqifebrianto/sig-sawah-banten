@@ -47,7 +47,7 @@
                   ?>
                       <tr>
                         <td><?php echo $no; ?></td>
-                        <td><?php echo $item->nama_wisata; ?></td>
+                        <td><?php echo $item->nama_daerah; ?></td>
                         <td><?php echo $item->alamat; ?></td>
                         <td><?php echo $item->deskripsi; ?></td>
                         <td class="ctr">

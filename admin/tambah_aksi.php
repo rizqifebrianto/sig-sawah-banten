@@ -3,7 +3,7 @@
 include '../koneksi.php';
 
 // menangkap data yang di kirim dari form
-$nama = $_POST['nama_wisata'];
+$nama = $_POST['nama_daerah'];
 $alamat = $_POST['alamat'];
 $deskripsi = $_POST['deskripsi'];
 $latitude = $_POST['latitude'];

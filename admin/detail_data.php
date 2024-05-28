@@ -46,11 +46,11 @@ if (empty($_SESSION['username'])) {
                                 <table id="example" class="table table-hover table-bordered">
                                     <tr>
                                         <td width="250">Nama Daerah</td>
-                                        <td width="550"><?php echo $data['nama_wisata']; ?></td>
+                                        <td width="550"><?php echo $data['nama_daerah']; ?></td>
                                     </tr>
                                     <tr>
                                         <td>Luas</td>
-                                        <td><?php echo $data['luas_sawah']; ?></td>
+                                        <td><?php echo $data['alamat']; ?></td>
                                     </tr>
                                     <tr>
                                         <td>Deskripsi</td>
