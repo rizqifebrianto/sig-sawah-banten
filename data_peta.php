@@ -1,4 +1,4 @@
-<?php include "header2.php"; ?>
+<?php ?>
 
     <link rel="stylesheet" href="qgis2-web/css/leaflet.css">
     <link rel="stylesheet" href="qgis2-web/css/L.Control.Layers.Tree.css">

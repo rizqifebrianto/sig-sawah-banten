@@ -38,7 +38,6 @@ include "../koneksi.php";
                                             <th>Alamat</th>
                                             <th>Latitude</th>
                                             <th>Longitude</th>
-                                            <th>Latitude</th>
                                             <th>Aksi</th>
                                         </tr>
                                     </thead>
@@ -55,7 +54,6 @@ include "../koneksi.php";
                                                 <td><?php echo $d['alamat']; ?></td>
                                                 <td><?php echo $d['latitude']; ?></td>
                                                 <td><?php echo $d['longitude']; ?></td>
-                                                <td><?php echo $d['latitude']; ?></td>
                                                 <td>
                                                     <a href="edit_data.php?id_sawah=<?php echo $d['id_sawah']; ?> " class="btn-sm btn-primary"><span class="fas fa-edit"></a>
                                                     <a href="hapus_aksi.php?id_sawah=<?php echo $d['id_sawah']; ?>" class="btn-sm btn-danger"><span class="fas fa-trash"></a>
