@@ -34,29 +34,31 @@ include "../koneksi.php";
                                     <thead>
                                         <tr>
                                             <th>NO</th>
-                                            <th>Nama Sawah</th>
-                                            <th>Alamat</th>
-                                            <th>Latitude</th>
+                                            <th>Nama Daerah</th>
+                                            <th>Luas Sawah</th>
+                                            <th>Deskripsi</th>
                                             <th>Longitude</th>
+                                            <th>Latitude</th>
                                             <th>Aksi</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <?php
                                         $no = 0;
-                                        $data = mysqli_query($koneksi, "select * from wisata");
+                                        $data = mysqli_query($koneksi, "SELECT * FROM wisata");
                                         while ($d = mysqli_fetch_array($data)) {
                                             $no++;
                                         ?>
                                             <tr>
                                                 <td><?php echo $no ?></td>
-                                                <td><b><a href="detail_data.php?id_wisata=<?php echo $d['id_wisata']; ?> "> <?php echo $d['nama_wisata']; ?> </a> </b></td>
-                                                <td><?php echo $d['alamat']; ?></td>
-                                                <td><?php echo $d['latitude']; ?></td>
+                                                <td><b><a href="detail_data.php?id_sawah=<?php echo $d['id_sawah']; ?> "> <?php echo $d['nama_daerah']; ?> </a> </b></td>
+                                                <td><?php echo $d['luas_sawah']; ?></td>
+                                                <td><?php echo $d['deskripsi']; ?></td>
                                                 <td><?php echo $d['longitude']; ?></td>
+                                                <td><?php echo $d['latitude']; ?></td>
                                                 <td>
-                                                    <a href="edit_data.php?id_wisata=<?php echo $d['id_wisata']; ?> " class="btn-sm btn-primary"><span class="fas fa-edit"></a>
-                                                    <a href="hapus_aksi.php?id_wisata=<?php echo $d['id_wisata']; ?>" class="btn-sm btn-danger"><span class="fas fa-trash"></a>
+                                                    <a href="edit_data.php?id_sawah=<?php echo $d['id_sawah']; ?> " class="btn-sm btn-primary"><span class="fas fa-edit"></a>
+                                                    <a href="hapus_aksi.php?id_sawah=<?php echo $d['id_sawah']; ?>" class="btn-sm btn-danger"><span class="fas fa-trash"></a>
                                                 </td>
                                             </tr>
                             </div>
@@ -75,4 +77,5 @@ include "../koneksi.php";
         <?php include "footer.php"; ?>
 
     </div>
-    <!-- End of Page Wrapper -->
+</body>
+</html>

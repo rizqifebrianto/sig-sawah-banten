@@ -1,3 +1,11 @@
+<?php
+session_start();
+if ($_SESSION['status'] != "login") {
+    header("location:../tampil_data.php?pesan=belum_login");
+}
+include "../koneksi.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <?php include "header.php"; ?>
@@ -12,74 +20,62 @@
             <div id="content">
                 <?php include "menu_topbar.php"; ?>
 
+
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-                    <!-- Page Heading -->
-                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Tambah Data Tempat Persebaran Sawah</h1>
-                    </div>
 
-                    <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Tambah Data Persawahan</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Data Persebaran Sawah Prov. Banten</h6>
                         </div>
                         <div class="card-body">
-
-                            <!-- Main content -->
-                            <form class="form-horizontal style-form" style="margin-top: 10px;" action="tambah_aksi.php" method="post" enctype="multipart/form-data" name="form1" id="form1">
-                                <div class="form-group">
-                                    <label class="col-sm-2 col-sm-2 control-label">Nama Sawah</label>
-                                    <div class="col-sm-6">
-                                        <input name="nama_wisata" type="text" class="form-control" placeholder="Nama Sawah" required />
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="col-sm-2 col-sm-4 control-label">Alamat</label>
-                                    <div class="col-sm-6">
-                                        <input name="alamat" class="form-control" type="text" placeholder="Alamat" required />
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="col-sm-2 col-sm-4 control-label">Deskripsi</label>
-                                    <div class="col-sm-6">
-                                        <input name="deskripsi" class="form-control" type="text" placeholder="Deskripsi" required />
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="col-sm-2 col-sm-4 control-label">Latitude</label>
-                                    <div class="col-sm-6">
-                                        <input name="latitude" class="form-control" type="text" placeholder="-7.3811577" required />
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="col-sm-2 col-sm-4 control-label">Longitude</label>
-                                    <div class="col-sm-6">
-                                        <input name="longitude" class="form-control" type="text" placeholder="109.2550945" required />
-                                    </div>
-                                </div>
-                                <div class="form-group" style="margin-bottom: 20px;">
-                                    <label class="col-sm-2 col-sm-4 control-label"></label>
-                                    <div class="col-sm-8">
-                                        <input type="submit" value="Simpan" class="btn btn-sm btn-primary" />
-                                    </div>
-                                </div>
-                                <div style="margin-top: 20px;"></div>
-                            </form>
-
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>NO</th>
+                                            <th>Nama Daerah</th>
+                                            <th>Luas Sawah</th>
+                                            <th>Deskripsi</th>
+                                            <th>Longitude</th>
+                                            <th>Latitude</th>
+                                            <th>Aksi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <?php
+                                        $no = 0;
+                                        $data = mysqli_query($koneksi, "SELECT * FROM wisata");
+                                        while ($d = mysqli_fetch_array($data)) {
+                                            $no++;
+                                        ?>
+                                            <tr>
+                                                <td><?php echo $no ?></td>
+                                                <td><b><a href="detail_data.php?id_sawah=<?php echo $d['id_sawah']; ?> "> <?php echo $d['nama_daerah']; ?> </a> </b></td>
+                                                <td><?php echo $d['luas_sawah']; ?></td>
+                                                <td><?php echo $d['deskripsi']; ?></td>
+                                                <td><?php echo $d['longitude']; ?></td>
+                                                <td><?php echo $d['latitude']; ?></td>
+                                                <td>
+                                                    <a href="edit_data.php?id_sawah=<?php echo $d['id_sawah']; ?> " class="btn-sm btn-primary"><span class="fas fa-edit"></a>
+                                                    <a href="hapus_aksi.php?id_sawah=<?php echo $d['id_sawah']; ?>" class="btn-sm btn-danger"><span class="fas fa-trash"></a>
+                                                </td>
+                                            </tr>
+                            </div>
+                        <?php
+                                        }
+                        ?>
+                        </tbody>
+                        </table>
 
                         </div>
                     </div>
-
                 </div>
-                <!-- /.container-fluid -->
             </div>
-            <!-- End of Main Content -->
-            <?php include "footer.php"; ?>
         </div>
-        <!-- End of Content Wrapper -->
-    </div>
-    <!-- End of Page Wrapper -->
-</body>
 
+        <?php include "footer.php"; ?>
+
+    </div>
+</body>
 </html>

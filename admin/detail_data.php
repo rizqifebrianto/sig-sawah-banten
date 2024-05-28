@@ -22,8 +22,8 @@ if (empty($_SESSION['username'])) {
                     <?php include "menu_topbar.php"; ?>
 
                     <?php
-                    $id = $_GET['id_wisata'];
-                    $query = mysqli_query($koneksi, "select * from wisata where id_wisata='$id'");
+                    $id = $_GET['id_sawah'];
+                    $query = mysqli_query($koneksi, "select * from wisata where id_sawah='$id'");
                     $data  = mysqli_fetch_array($query);
                     ?>
 
@@ -32,7 +32,7 @@ if (empty($_SESSION['username'])) {
                 <div class="container-fluid">
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Detail Daerah <?php echo $data['nama_wisata']; ?></h1>
+                        <h1 class="h3 mb-0 text-gray-800">Detail Daerah <?php echo $data['nama_daerah']; ?></h1>
                     </div>
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
@@ -46,11 +46,11 @@ if (empty($_SESSION['username'])) {
                                 <table id="example" class="table table-hover table-bordered">
                                     <tr>
                                         <td width="250">Nama Daerah</td>
-                                        <td width="550"><?php echo $data['nama_wisata']; ?></td>
+                                        <td width="550"><?php echo $data['nama_daerah']; ?></td>
                                     </tr>
                                     <tr>
-                                        <td>Alamat</td>
-                                        <td><?php echo $data['alamat']; ?></td>
+                                        <td>Luas</td>
+                                        <td><?php echo $data['luas_sawah']; ?></td>
                                     </tr>
                                     <tr>
                                         <td>Deskripsi</td>
