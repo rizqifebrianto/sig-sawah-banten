@@ -64,7 +64,7 @@ $title = "Detail dan Lokasi : " . $nama_daerah;
               </tr>
               <tr>
                 <td>
-                  <h6>Alamat</h6>
+                  <h6>Wilayah</h6>
                 </td>
                 <td>
                   <p><?php echo $alamat ?></p>

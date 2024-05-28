@@ -35,9 +35,9 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-sm-2 col-sm-4 control-label">Alamat</label>
+                                    <label class="col-sm-2 col-sm-4 control-label">Wilayah</label>
                                     <div class="col-sm-6">
-                                        <input name="alamat" class="form-control" type="text" placeholder="Alamat" required />
+                                        <input name="alamat" class="form-control" type="text" placeholder="Wilayah" required />
                                     </div>
                                 </div>
                                 <div class="form-group">

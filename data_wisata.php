@@ -33,7 +33,7 @@
                   <tr>
                     <th width="5%">No.</th>
                     <th width="20%">Nama Sawah</th>
-                    <th width="20%">Alamat</th>
+                    <th width="20%">Wilayah</th>
                     <th width="40%">Deskripsi</th>
                   </tr>
                 </thead>

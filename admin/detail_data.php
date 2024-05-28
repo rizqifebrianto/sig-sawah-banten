@@ -49,7 +49,7 @@ if (empty($_SESSION['username'])) {
                                         <td width="550"><?php echo $data['nama_daerah']; ?></td>
                                     </tr>
                                     <tr>
-                                        <td>Luas</td>
+                                        <td>Wilayah</td>
                                         <td><?php echo $data['alamat']; ?></td>
                                     </tr>
                                     <tr>

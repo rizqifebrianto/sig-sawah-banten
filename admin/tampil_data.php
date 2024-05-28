@@ -35,7 +35,7 @@ include "../koneksi.php";
                                         <tr>
                                             <th>NO</th>
                                             <th>Nama Sawah</th>
-                                            <th>Alamat</th>
+                                            <th>Wilayah</th>
                                             <th>Latitude</th>
                                             <th>Longitude</th>
                                             <th>Aksi</th>
