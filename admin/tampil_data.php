@@ -34,9 +34,9 @@ include "../koneksi.php";
                                     <thead>
                                         <tr>
                                             <th>NO</th>
-                                            <th>Nama Daerah</th>
+                                            <th>Nama Sawah</th>
                                             <th>Alamat</th>
-                                            <th>Deskripsi</th>
+                                            <th>Latitude</th>
                                             <th>Longitude</th>
                                             <th>Latitude</th>
                                             <th>Aksi</th>
@@ -51,9 +51,9 @@ include "../koneksi.php";
                                         ?>
                                             <tr>
                                                 <td><?php echo $no ?></td>
-                                                <td><b><a href="detail_data.php?id_sawah=<?php echo $d['id_sawah']; ?> "> <?php echo $d['nama_daerah']; ?> </a> </b></td>
+                                                <td><b><a href="detail_data.php?id_wisata=<?php echo $d['id_wisata']; ?> "> <?php echo $d['nama_wisata']; ?> </a> </b></td>
                                                 <td><?php echo $d['alamat']; ?></td>
-                                                <td><?php echo $d['deskripsi']; ?></td>
+                                                <td><?php echo $d['latitude']; ?></td>
                                                 <td><?php echo $d['longitude']; ?></td>
                                                 <td><?php echo $d['latitude']; ?></td>
                                                 <td>

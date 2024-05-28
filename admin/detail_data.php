@@ -45,12 +45,12 @@ if (empty($_SESSION['username'])) {
                             <div class="panel-body">
                                 <table id="example" class="table table-hover table-bordered">
                                     <tr>
-                                        <td width="250">Nama Sawah</td>
-                                        <td width="550"><?php echo $data['nama_daerah']; ?></td>
+                                        <td width="250">Nama Daerah</td>
+                                        <td width="550"><?php echo $data['nama_wisata']; ?></td>
                                     </tr>
                                     <tr>
-                                        <td>Alamat</td>
-                                        <td><?php echo $data['alamat']; ?></td>
+                                        <td>Luas</td>
+                                        <td><?php echo $data['luas_sawah']; ?></td>
                                     </tr>
                                     <tr>
                                         <td>Deskripsi</td>

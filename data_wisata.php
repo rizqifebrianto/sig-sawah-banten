@@ -32,7 +32,7 @@
                 <thead>
                   <tr>
                     <th width="5%">No.</th>
-                    <th width="20%">Nama Daerah</th>
+                    <th width="20%">Nama Sawah</th>
                     <th width="20%">Alamat</th>
                     <th width="40%">Deskripsi</th>
                   </tr>
@@ -47,7 +47,7 @@
                   ?>
                       <tr>
                         <td><?php echo $no; ?></td>
-                        <td><?php echo $item->nama_daerah; ?></td>
+                        <td><?php echo $item->nama_wisata; ?></td>
                         <td><?php echo $item->alamat; ?></td>
                         <td><?php echo $item->deskripsi; ?></td>
                         <td class="ctr">
