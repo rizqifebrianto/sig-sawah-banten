@@ -1,24 +1,24 @@
 <?php include "header.php"; ?>
 <?php
-$id = $_GET['id_wisata'];
+$id = $_GET['id_sawah'];
 include_once "ambildata_id.php";
 $obj = json_decode($data);
-$id_wisata = "";
-$nama_wisata = "";
+$id_sawah = "";
+$nama_daerah = "";
 $alamat = "";
 $deskripsi = "";
 $lat = "";
 $long = "";
 foreach ($obj->results as $item) {
-  $id_wisata .= $item->id_wisata;
-  $nama_wisata .= $item->nama_wisata;
+  $id_sawah .= $item->id_sawah;
+  $nama_daerah .= $item->nama_daerah;
   $alamat .= $item->alamat;
   $deskripsi .= $item->deskripsi;
   $lat .= $item->latitude;
   $long .= $item->longitude;
 }
 
-$title = "Detail dan Lokasi : " . $nama_wisata;
+$title = "Detail dan Lokasi : " . $nama_daerah;
 //include_once "header.php"; 
 ?>
 
@@ -59,7 +59,7 @@ $title = "Detail dan Lokasi : " . $nama_wisata;
                   <h6>Nama Sawah</h6>
                 </td>
                 <td>
-                  <p><?php echo $nama_wisata ?></p>
+                  <p><?php echo $nama_daerah ?></p>
                 </td>
               </tr>
               <tr>

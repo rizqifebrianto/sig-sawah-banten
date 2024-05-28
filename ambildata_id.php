@@ -1,6 +1,6 @@
 <?php
 include "koneksi.php";
-$Q = mysqli_query($koneksi, "SELECT * FROM wisata where id_wisata=" . $id) or die(mysqli_error($koneksi));
+$Q = mysqli_query($koneksi, "SELECT * FROM wisata where id_sawah=" . $id) or die(mysqli_error($koneksi));
 if ($Q) {
         $posts = array();
         if (mysqli_num_rows($Q)) {

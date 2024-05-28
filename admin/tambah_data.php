@@ -31,7 +31,7 @@
                                 <div class="form-group">
                                     <label class="col-sm-2 col-sm-2 control-label">Nama Sawah</label>
                                     <div class="col-sm-6">
-                                        <input name="nama_wisata" type="text" class="form-control" placeholder="Nama Sawah" required />
+                                        <input name="nama_daerah" type="text" class="form-control" placeholder="Nama Sawah" required />
                                     </div>
                                 </div>
                                 <div class="form-group">
