@@ -4,13 +4,13 @@ include '../koneksi.php';
 
 // menangkap data yang di kirim dari form
 $nama = $_POST['nama_daerah'];
-$luas = $_POST['luas_sawah'];
+$alamat = $_POST['alamat'];
 $deskripsi = $_POST['deskripsi'];
 $latitude = $_POST['latitude'];
 $longitude = $_POST['longitude'];
 
 // query untuk menginput data ke database
-$query = "INSERT INTO wisata (nama_daerah, luas_sawah, deskripsi, latitude, longitude) VALUES ('$nama', '$luas', '$deskripsi', '$latitude', '$longitude')";
+$query = "INSERT INTO wisata (nama_daerah, luas_sawah, deskripsi, latitude, longitude) VALUES ('$nama', '$alamat', '$deskripsi', '$latitude', '$longitude')";
 
 // jalankan query
 if (mysqli_query($koneksi, $query)) {

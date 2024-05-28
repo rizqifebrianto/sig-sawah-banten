@@ -51,7 +51,7 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <label class="col-sm-2 col-sm-2 control-label">Luas</label>
+                                        <label class="col-sm-2 col-sm-2 control-label">Wilayah</label>
                                         <div class="col-sm-8">
                                             <input name="alamat" class="form-control" id="alamat" type="text" value="<?php echo $data['alamat']; ?>" required />
                                         </div>
